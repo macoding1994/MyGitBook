@@ -1,5 +1,5 @@
 # 网络爬虫
-<img style="width:800px;height:500px" src="https://macoding1994.github.io/Python-for-GitBook/Python/爬虫/images/gao.gif"  alt="真棒" align=center />
+<img  src="https://macoding1994.github.io/Python-for-GitBook/Python/爬虫/images/hahaha.gif"  alt="真棒" align=center />
 
 > 网络爬虫：顾名思义是指网络（万维网）上的一个虫子（程序）
 >

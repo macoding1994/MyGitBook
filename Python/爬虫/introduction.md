@@ -1,4 +1,5 @@
 # 网络爬虫
+<img style="width:800px;height:500px" src="https://macoding1994.github.io/Python-for-GitBook/Python/爬虫/images/gao.gif"  alt="真棒" align=center />
 
 > 网络爬虫：顾名思义是指网络（万维网）上的一个虫子（程序）
 >
@@ -21,5 +22,5 @@
 >
 > 爬虫程序请遵守低调运行，你别上来并发很多的Request去访问服务器，导致服务器压力过大，请记住细水长流
 
-<img style="width:50px;height:50px" src="<https://macoding1994.github.io/Python-for-GitBook/Python/爬虫/images/gao.gif>"  alt="真棒" align=center />
+
 

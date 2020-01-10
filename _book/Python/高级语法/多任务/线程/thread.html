@@ -1,0 +1,748 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.1.1线程 · Msj's gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Msj">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../基础语法/basis.md">
+            
+                <span>
+            
+                    
+                    1.基础语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../advanced.md">
+            
+                <span>
+            
+                    
+                    2.高级语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../introduction.html">
+            
+                <a href="../introduction.html">
+            
+                    
+                    2.1多任务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.2.1.1" data-path="thread.html">
+            
+                <a href="thread.html">
+            
+                    
+                    2.1.1线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.2" >
+            
+                <span>
+            
+                    
+                    2.1.2进程
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.1.3" >
+            
+                <span>
+            
+                    
+                    2.1.3协程
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    3.GUI
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    4.WEB
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    5.CRAW
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" >
+            
+                <span>
+            
+                    
+                    6.AI
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" >
+            
+                <span>
+            
+                    
+                    7.DEMO
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >2.1.1线程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x7EBF;&#x7A0B;"><b></b>&#x7EBF;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#&#x539F;&#x751F;threadingthread"><b></b>&#x539F;&#x751F;threading.Thread</a></li><ul><li><span class="title-icon "></span><a href="#&#x5BFC;&#x5305;"><b></b>&#x5BFC;&#x5305;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;"><b></b>&#x521B;&#x5EFA;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;"><b></b>&#x542F;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#&#x4E92;&#x65A5;&#x9501;"><b></b>&#x4E92;&#x65A5;&#x9501;</a></li><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;api"><b></b>&#x5E38;&#x7528;API</a></li><li><span class="title-icon "></span><a href="#demo"><b></b>demo</a></li></ul><li><span class="title-icon "></span><a href="#concurrentfutures&#x7EBF;&#x7A0B;&#x6C60;"><b></b>concurrent.futures&#x7EBF;&#x7A0B;&#x6C60;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5BFC;&#x5305;_1"><b></b>&#x5BFC;&#x5305;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;_1"><b></b>&#x521B;&#x5EFA;</a></li><li><span class="title-icon "></span><a href="#&#x7EBF;&#x7A0B;&#x6C60;api"><b></b>&#x7EBF;&#x7A0B;&#x6C60;API</a></li></ul></ul></ul></div><a href="#&#x7EBF;&#x7A0B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7EBF;&#x7A0B;"><a name="&#x7EBF;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EBF;&#x7A0B;</h1>
+<blockquote>
+<p>&#x7EBF;&#x7A0B;&#xFF1A;&#x5C31;&#x662F;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x7684;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#xFF0C;&#x6BCF;&#x4E2A;&#x8FD0;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#x81F3;&#x5C11;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x662F;CPU&#x8C03;&#x5EA6;&#x7684;&#x57FA;&#x672C;&#x5355;&#x4F4D;</p>
+<p>&#x76F8;&#x5173;&#x6982;&#x5FF5;&#xFF1A;</p>
+<ul>
+<li>&#x7EBF;&#x7A0B;&#x9501; &#xFF1A; &#x4E92;&#x65A5;&#x9501;&#x5BF9;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x9501;&#x5B9A;&#xFF0C;&#x4FDD;&#x8BC1;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53BB;&#x64CD;&#x4F5C;</li>
+</ul>
+</blockquote>
+<h2 id="&#x539F;&#x751F;threadingthread"><a name="&#x539F;&#x751F;threadingthread" class="anchor-navigation-ex-anchor" href="#&#x539F;&#x751F;threadingthread"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x751F;threading.Thread</h2>
+<h3 id="&#x5BFC;&#x5305;"><a name="&#x5BFC;&#x5305;" class="anchor-navigation-ex-anchor" href="#&#x5BFC;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BFC;&#x5305;</h3>
+<pre><code class="lang-python"><span class="hljs-comment">#&#x5BFC;&#x5165;&#x7EBF;&#x7A0B;&#x6A21;&#x5757;</span>
+<span class="hljs-keyword">import</span> threading
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;"><a name="&#x521B;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;</h3>
+<blockquote>
+<p>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>target : &#x6267;&#x884C;&#x4EFB;&#x52A1;&#x7684;&#x51FD;&#x6570;&#x5F15;&#x7528;&#xFF0C;&#x4E0D;&#x80FD;&#x5199;&#x6210;<code>func()</code></li>
+<li>args : &#x5143;&#x7956;&#x4F20;&#x53C2;</li>
+<li>kwargs &#xFF1A;&#x5B57;&#x5178;&#x4F20;&#x53C2;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;</span>
+thread = threading.Thread(target=func,args,kwargs)
+</code></pre>
+<h3 id="&#x542F;&#x52A8;"><a name="&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8;</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;</span>
+thread = threading.Thread(target=func,args,kwargs)
+thread.start()
+</code></pre>
+<h3 id="&#x4E92;&#x65A5;&#x9501;"><a name="&#x4E92;&#x65A5;&#x9501;" class="anchor-navigation-ex-anchor" href="#&#x4E92;&#x65A5;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E92;&#x65A5;&#x9501;</h3>
+<blockquote>
+<p>&#x4F7F;&#x7528;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x9501;&#x4E4B;&#x524D;&#x662F;&#x6CA1;&#x6709;&#x4E0A;&#x9501;&#x7684;&#xFF0C;&#x90A3;&#x4E48;<code>acquire</code>&#x4E0D;&#x4F1A;&#x5835;&#x585E;</li>
+<li>&#x5982;&#x679C;&#x5728;&#x8C03;&#x7528;<code>acquire</code>&#x5BF9;&#x8FD9;&#x4E2A;&#x9501;&#x4E0A;&#x9501;&#x4E4B;&#x524D; &#x5B83;&#x5DF2;&#x7ECF;&#x88AB; &#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x4E0A;&#x4E86;&#x9501;&#xFF0C;&#x90A3;&#x4E48;&#x6B64;&#x65F6;<code>acquire</code>&#x4F1A;&#x5835;&#x585E;&#xFF0C;&#x76F4;&#x5230;&#x8FD9;&#x4E2A;&#x9501;&#x88AB;&#x89E3;&#x9501;&#x4E3A;&#x6B62;</li>
+</ul>
+<p>&#x76EE;&#x7684;&#xFF1A;</p>
+<ul>
+<li>&#x80FD;&#x591F;&#x4FDD;&#x8BC1;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x8BBF;&#x95EE;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x8D44;&#x6E90;&#x7ADE;&#x4E89;&#x53CA;&#x6570;&#x636E;&#x9519;&#x8BEF;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x521B;&#x5EFA;&#x9501;</span>
+mutex = threading.Lock()
+
+<span class="hljs-comment"># &#x9501;&#x5B9A;</span>
+mutex.acquire()
+
+<span class="hljs-comment"># &#x91CA;&#x653E;</span>
+mutex.release()
+
+<span class="hljs-comment"># &#x89E3;&#x51B3;&#x6B7B;&#x9501;&#x95EE;&#x9898; &#x4F7F;&#x7528;&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;&#x5668;&#x7BA1;&#x7406;LOCK</span>
+<span class="hljs-keyword">with</span> mutex:
+    <span class="hljs-keyword">pass</span>
+</code></pre>
+<h3 id="&#x5E38;&#x7528;api"><a name="&#x5E38;&#x7528;api" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;api"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;API</h3>
+<blockquote>
+<p>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x7EBF;&#x7A0B; &#xFF1A; <code>threading.current_thread().name</code></p>
+<p>&#x6D3B;&#x52A8;&#x7EBF;&#x7A0B;&#x7684;&#x5217;&#x8868; &#xFF1A;<code>threading.enumerate()</code></p>
+</blockquote>
+<h3 id="demo"><a name="demo" class="anchor-navigation-ex-anchor" href="#demo"><i class="fa fa-link" aria-hidden="true"></i></a>demo</h3>
+<h4 id="1&#x591A;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x4EE3;&#x7801;"><a name="1&#x591A;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#1&#x591A;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x591A;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x4EE3;&#x7801;</h4>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> threading
+<span class="hljs-keyword">import</span> time
+
+
+<span class="hljs-comment"># &#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x53D8;&#x91CF;</span>
+my_list = list()
+
+<span class="hljs-comment"># &#x5199;&#x5165;&#x6570;&#x636E;&#x4EFB;&#x52A1;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write_data</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+        my_list.append(i)
+        time.sleep(<span class="hljs-number">0.1</span>)
+    print(<span class="hljs-string">&quot;write_data:&quot;</span>, my_list)
+
+
+<span class="hljs-comment"># &#x8BFB;&#x53D6;&#x6570;&#x636E;&#x4EFB;&#x52A1;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read_data</span><span class="hljs-params">()</span>:</span>
+    print(<span class="hljs-string">&quot;read_data:&quot;</span>, my_list)
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x5199;&#x5165;&#x6570;&#x636E;&#x7684;&#x7EBF;&#x7A0B;</span>
+    write_thread = threading.Thread(target=write_data)
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x7684;&#x7EBF;&#x7A0B;</span>
+    read_thread = threading.Thread(target=read_data)
+
+    write_thread.start()
+    <span class="hljs-comment"># &#x5EF6;&#x65F6;</span>
+    <span class="hljs-comment"># time.sleep(1)</span>
+    <span class="hljs-comment"># &#x4E3B;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;&#x5199;&#x5165;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#x4EE3;&#x7801;&#x5728;&#x7EE7;&#x7EED;&#x5F80;&#x4E0B;&#x6267;&#x884C;</span>
+    write_thread.join()
+    print(<span class="hljs-string">&quot;&#x5F00;&#x59CB;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5566;&quot;</span>)
+    read_thread.start()
+<span class="hljs-comment">#--------------------------------------------------------------------------------------</span>
+write_data: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]
+&#x5F00;&#x59CB;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5566;
+read_data: [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]
+</code></pre>
+<h4 id="2&#x4F7F;&#x7528;&#x4E92;&#x65A5;&#x9501;&#x5B8C;&#x6210;2&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x5404;&#x52A0;100&#x4E07;&#x6B21;&#x7684;&#x64CD;&#x4F5C;"><a name="2&#x4F7F;&#x7528;&#x4E92;&#x65A5;&#x9501;&#x5B8C;&#x6210;2&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x5404;&#x52A0;100&#x4E07;&#x6B21;&#x7684;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#2&#x4F7F;&#x7528;&#x4E92;&#x65A5;&#x9501;&#x5B8C;&#x6210;2&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x5404;&#x52A0;100&#x4E07;&#x6B21;&#x7684;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x4F7F;&#x7528;&#x4E92;&#x65A5;&#x9501;&#x5B8C;&#x6210;2&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x540C;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x5404;&#x52A0;100&#x4E07;&#x6B21;&#x7684;&#x64CD;&#x4F5C;</h4>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> threading
+
+
+<span class="hljs-comment"># &#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x53D8;&#x91CF;</span>
+g_num = <span class="hljs-number">0</span>
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x5168;&#x5C40;&#x4E92;&#x65A5;&#x9501;</span>
+lock = threading.Lock()
+
+
+<span class="hljs-comment"># &#x5FAA;&#x73AF;&#x4E00;&#x6B21;&#x7ED9;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x52A0;1</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sum_num1</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># &#x4E0A;&#x9501;</span>
+    lock.acquire()
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1000000</span>):
+        <span class="hljs-keyword">global</span> g_num
+        g_num += <span class="hljs-number">1</span>
+
+    print(<span class="hljs-string">&quot;sum1:&quot;</span>, g_num)
+    <span class="hljs-comment"># &#x91CA;&#x653E;&#x9501;</span>
+    lock.release()
+
+
+<span class="hljs-comment"># &#x5FAA;&#x73AF;&#x4E00;&#x6B21;&#x7ED9;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x52A0;1</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sum_num2</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-comment"># &#x4E0A;&#x9501;</span>
+    lock.acquire()
+    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1000000</span>):
+        <span class="hljs-keyword">global</span> g_num
+        g_num += <span class="hljs-number">1</span>
+    print(<span class="hljs-string">&quot;sum2:&quot;</span>, g_num)
+    <span class="hljs-comment"># &#x91CA;&#x653E;&#x9501;</span>
+    lock.release()
+
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;</span>
+    first_thread = threading.Thread(target=sum_num1)
+    second_thread = threading.Thread(target=sum_num2)
+    <span class="hljs-comment"># &#x542F;&#x52A8;&#x7EBF;&#x7A0B;</span>
+    first_thread.start()
+    second_thread.start()
+
+    <span class="hljs-comment"># &#x63D0;&#x793A;&#xFF1A;&#x52A0;&#x4E0A;&#x4E92;&#x65A5;&#x9501;&#xFF0C;&#x90A3;&#x4E2A;&#x7EBF;&#x7A0B;&#x62A2;&#x5230;&#x8FD9;&#x4E2A;&#x9501;&#x6211;&#x4EEC;&#x51B3;&#x5B9A;&#x4E0D;&#x4E86;&#xFF0C;&#x90A3;&#x7EBF;&#x7A0B;&#x62A2;&#x5230;&#x9501;&#x90A3;&#x4E2A;&#x7EBF;&#x7A0B;&#x5148;&#x6267;&#x884C;&#xFF0C;&#x6CA1;&#x6709;&#x62A2;&#x5230;&#x7684;&#x7EBF;&#x7A0B;&#x9700;&#x8981;&#x7B49;&#x5F85;</span>
+    <span class="hljs-comment"># &#x52A0;&#x4E0A;&#x4E92;&#x65A5;&#x9501;&#x591A;&#x4EFB;&#x52A1;&#x77AC;&#x95F4;&#x53D8;&#x6210;&#x5355;&#x4EFB;&#x52A1;&#xFF0C;&#x6027;&#x80FD;&#x4F1A;&#x4E0B;&#x964D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53BB;&#x6267;&#x884C;</span>
+<span class="hljs-comment">#--------------------------------------------------------------------------------------</span>
+sum1: <span class="hljs-number">1000000</span>
+sum2: <span class="hljs-number">2000000</span>
+</code></pre>
+<h4 id="3&#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;&#x7C7B;"><a name="3&#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#3&#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;&#x7C7B;</h4>
+<blockquote>
+<ul>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;&#x4E0D;&#x80FD;&#x6307;&#x5B9A;target&#xFF0C;&#x56E0;&#x4E3A;&#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;&#x91CC;&#x9762;&#x7684;&#x4EFB;&#x52A1;&#x90FD;&#x7EDF;&#x4E00;&#x5728;run&#x65B9;&#x6CD5;&#x91CC;&#x9762;&#x6267;&#x884C;</li>
+<li>&#x542F;&#x52A8;&#x7EBF;&#x7A0B;&#x7EDF;&#x4E00;&#x8C03;&#x7528;start&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x8981;&#x76F4;&#x63A5;&#x8C03;&#x7528;run&#x65B9;&#x6CD5;, &#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x5B50;&#x7EBF;&#x7A0B;&#x53BB;&#x6267;&#x884C;&#x4EFB;&#x52A1;</li>
+</ul>
+</blockquote>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> threading
+
+<span class="hljs-comment"># &#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;&#x7C7B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyThread</span><span class="hljs-params">(threading.Thread)</span>:</span>
+    <span class="hljs-comment"># &#x901A;&#x8FC7;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x53D6;&#x63A5;&#x6536;&#x4EFB;&#x52A1;&#x7684;&#x53C2;&#x6570;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, info1, info2)</span>:</span>
+        <span class="hljs-comment"># &#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;</span>
+        super(MyThread, self).__init__()
+        self.info1 = info1
+        self.info2 = info2
+
+    <span class="hljs-comment"># &#x5B9A;&#x4E49;&#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;&#x7684;&#x4EFB;&#x52A1;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show1</span><span class="hljs-params">(self)</span>:</span>
+        print(self.info1)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">show2</span><span class="hljs-params">(self)</span>:</span>
+        print(self.info2)
+
+    <span class="hljs-comment"># &#x901A;&#x8FC7;run&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x76F8;&#x5173;&#x4EFB;&#x52A1;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">(self)</span>:</span>
+        self.show1()
+        self.show2()
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x7EBF;&#x7A0B;</span>
+my_thread = MyThread(<span class="hljs-string">&quot;&#x6D4B;&#x8BD5;1&quot;</span>, <span class="hljs-string">&quot;&#x6D4B;&#x8BD5;2&quot;</span>)
+<span class="hljs-comment"># &#x542F;&#x52A8;</span>
+my_thread.start()
+</code></pre>
+<hr>
+<h2 id="concurrentfutures&#x7EBF;&#x7A0B;&#x6C60;"><a name="concurrentfutures&#x7EBF;&#x7A0B;&#x6C60;" class="anchor-navigation-ex-anchor" href="#concurrentfutures&#x7EBF;&#x7A0B;&#x6C60;"><i class="fa fa-link" aria-hidden="true"></i></a>concurrent.futures&#x7EBF;&#x7A0B;&#x6C60;</h2>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x7EBF;&#x7A0B;&#x6C60;&#xFF1A;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x4E86;20&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x800C;&#x540C;&#x65F6;&#x53EA;&#x5141;&#x8BB8;3&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x8FD0;&#x884C;&#xFF0C;&#x4F46;&#x662F;20&#x4E2A;&#x7EBF;&#x7A0B;&#x90FD;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x548C;&#x9500;&#x6BC1;&#xFF0C;&#x7EBF;&#x7A0B;&#x7684;&#x521B;&#x5EFA;&#x662F;&#x9700;&#x8981;&#x6D88;&#x8017;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;</li>
+</ul>
+<p>&#x7EBF;&#x7A0B;&#x6C60;&#x601D;&#x60F3;&#xFF1A;</p>
+<ul>
+<li>&#x4E0E;&#x8FDB;&#x7A0B;&#x6C60;&#x601D;&#x60F3;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x5404;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x4EFB;&#x52A1;&#x6392;&#x961F;&#x7B49;&#x5F85;&#xFF0C;&#x5F53;&#x67D0;&#x4E2A;&#x7EBF;&#x7A0B;&#x5B8C;&#x6210;&#x4E86;&#x4EFB;&#x52A1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6392;&#x961F;&#x4EFB;&#x52A1;&#x5C31;&#x53EF;&#x4EE5;&#x5B89;&#x6392;&#x7ED9;&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x81EA;&#x52A8;&#x53BB;&#x8C03;&#x5EA6;&#x7EBF;&#x7A0B;</li>
+<li>&#x4E0E;markdown&#x4E00;&#x822C;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x53BB;&#x82B1;&#x5927;&#x91CF;&#x5FC3;&#x601D;&#x53BB;&#x6392;&#x7248;&#xFF08;&#x4E92;&#x65A5;&#x9501;&#xFF09;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x6CE8;&#x91CD;&#x4F60;&#x7684;&#x6587;&#x5B57;&#xFF08;&#x4EE3;&#x7801;&#x7F16;&#x5199;&#xFF09;</li>
+</ul>
+<p>&#x7EBF;&#x7A0B;&#x6C60;&#x4F18;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x4E3B;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x67D0;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF08;&#x6216;&#x8005;&#x4EFB;&#x52A1;&#x7684;&#xFF09;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x53CA;&#x8FD4;&#x56DE;&#x503C;</li>
+<li>&#x5F53;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E3B;&#x7EBF;&#x7A0B;&#x80FD;&#x591F;&#x7ACB;&#x5373;&#x77E5;&#x9053;</li>
+<li>&#x8BA9;&#x591A;&#x7EBF;&#x7A0B;&#x548C;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x7F16;&#x7801;&#x63A5;&#x53E3;&#x4E00;&#x81F4;</li>
+</ul>
+</blockquote>
+<h3 id="&#x5BFC;&#x5305;_1"><a name="&#x5BFC;&#x5305;_1" class="anchor-navigation-ex-anchor" href="#&#x5BFC;&#x5305;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BFC;&#x5305;</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x6807;&#x51C6;&#x5E93;concurrent.futures&#x6A21;&#x5757; &#x4E0D;&#x9700;&#x8981;pip&#x5B89;&#x88C5;</span>
+<span class="hljs-keyword">from</span> concurrent.futures <span class="hljs-keyword">import</span> ThreadPoolExecutor
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;_1"><a name="&#x521B;&#x5EFA;_1" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4F7F;&#x7528;&#x4E0A;&#x4E0B;&#x6587;&#x6765;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x6C60;</span>
+<span class="hljs-keyword">with</span> ThreadPoolExecutor(max_workers=<span class="hljs-number">2</span>) <span class="hljs-keyword">as</span> pool:
+    pool.submit(func,args)
+
+<span class="hljs-comment"># &#x6B63;&#x5E38;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x6C60;</span>
+pool = ThreadPoolExecutor(max_workers=<span class="hljs-number">2</span>)
+pool.submit(func,args)
+pool.shutdown()
+</code></pre>
+<h3 id="&#x7EBF;&#x7A0B;&#x6C60;api"><a name="&#x7EBF;&#x7A0B;&#x6C60;api" class="anchor-navigation-ex-anchor" href="#&#x7EBF;&#x7A0B;&#x6C60;api"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EBF;&#x7A0B;&#x6C60;API</h3>
+<blockquote>
+<p>submit(func,args):</p>
+<blockquote>
+<p><code>submit</code>&#x51FD;&#x6570;&#x6765;&#x63D0;&#x4EA4;&#x7EBF;&#x7A0B;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x51FD;&#x6570;&#x540D;&#x548C;&#x53C2;&#x6570;&#xFF09;&#x5230;&#x7EBF;&#x7A0B;&#x6C60;&#x4E2D;,&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;future&#x5BF9;&#x8C61;</p>
+</blockquote>
+<ul>
+<li>func -- &#x51FD;&#x6570;&#x5F15;&#x7528;</li>
+<li>args -- &#x5143;&#x7956;&#x4F20;&#x53C2;</li>
+</ul>
+<p>cancel()&#xFF1A;</p>
+<blockquote>
+<p><code>cancel</code>&#x51FD;&#x6570;&#x7528;&#x6765;&#x53D6;&#x6D88;&#x63D0;&#x4EA4;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x524D;&#x63D0;&#x662F;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x672A;&#x5728;&#x7EBF;&#x7A0B;&#x6C60;&#x4E2D;&#x6267;&#x884C;&#xFF0C;&#x8FD4;&#x56DE;Ture/False</p>
+</blockquote>
+<p>result():</p>
+<blockquote>
+<p><code>result</code>&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x540E;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x963B;&#x788D;&#x4E3B;&#x7EBF;&#x7A0B;</p>
+</blockquote>
+<p>as_completed():</p>
+<blockquote>
+<p><code>as_completed()</code>&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x4E2A;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x5728;&#x6CA1;&#x6709;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x963B;&#x585E;&#xFF0C;&#x5728;&#x6709;&#x67D0;&#x4E2A;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;<code>yield</code>&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x5C31;&#x80FD;&#x6267;&#x884C;for&#x5FAA;&#x73AF;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x7136;&#x540E;&#x7EE7;&#x7EED;&#x963B;&#x585E;&#x4F4F;&#xFF0C;&#x5FAA;&#x73AF;&#x5230;&#x6240;&#x6709;&#x7684;&#x4EFB;&#x52A1;&#x7ED3;&#x675F;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> concurrent.futures <span class="hljs-keyword">import</span> ThreadPoolExecutor, as_completed
+<span class="hljs-keyword">import</span> time
+
+<span class="hljs-comment"># &#x53C2;&#x6570;times&#x7528;&#x6765;&#x6A21;&#x62DF;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_html</span><span class="hljs-params">(times)</span>:</span>
+    time.sleep(times)
+    print(<span class="hljs-string">&quot;get page {}s finished&quot;</span>.format(times))
+    <span class="hljs-keyword">return</span> times
+
+executor = ThreadPoolExecutor(max_workers=<span class="hljs-number">2</span>)
+urls = [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>] <span class="hljs-comment"># &#x5E76;&#x4E0D;&#x662F;&#x771F;&#x7684;url</span>
+all_task = [executor.submit(get_html, (url)) <span class="hljs-keyword">for</span> url <span class="hljs-keyword">in</span> urls]
+
+<span class="hljs-keyword">for</span> future <span class="hljs-keyword">in</span> as_completed(all_task):
+    data = future.result()
+    print(<span class="hljs-string">&quot;in main: get page {}s success&quot;</span>.format(data))
+
+<span class="hljs-comment"># &#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+<span class="hljs-comment"># get page 2s finished</span>
+<span class="hljs-comment"># in main: get page 2s success</span>
+<span class="hljs-comment"># get page 3s finished</span>
+<span class="hljs-comment"># in main: get page 3s success</span>
+<span class="hljs-comment"># get page 4s finished</span>
+<span class="hljs-comment"># in main: get page 4s success</span>
+</code></pre>
+</blockquote>
+<p>map():</p>
+<blockquote>
+<p><code>map</code>&#x51FD;&#x6570;&#x4E0E;python&#x4E2D;&#x7684;<code>map</code>&#x4E00;&#x6837;&#xFF0C;&#x4F1A;&#x987A;&#x4FBF;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x4E0E;<code>submit</code>&#x548C;<code>result</code>&#x7ED3;&#x5408;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> concurrent.futures <span class="hljs-keyword">import</span> ThreadPoolExecutor
+<span class="hljs-keyword">import</span> time
+
+<span class="hljs-comment"># &#x53C2;&#x6570;times&#x7528;&#x6765;&#x6A21;&#x62DF;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_html</span><span class="hljs-params">(times)</span>:</span>
+    time.sleep(times)
+    print(<span class="hljs-string">&quot;get page {}s finished&quot;</span>.format(times))
+    <span class="hljs-keyword">return</span> times
+
+executor = ThreadPoolExecutor(max_workers=<span class="hljs-number">2</span>)
+urls = [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>] <span class="hljs-comment"># &#x5E76;&#x4E0D;&#x662F;&#x771F;&#x7684;url</span>
+
+<span class="hljs-keyword">for</span> data <span class="hljs-keyword">in</span> executor.map(get_html, urls):
+    print(<span class="hljs-string">&quot;in main: get page {}s success&quot;</span>.format(data))
+<span class="hljs-comment"># &#x6267;&#x884C;&#x7ED3;&#x679C;</span>
+<span class="hljs-comment"># get page 2s finished</span>
+<span class="hljs-comment"># get page 3s finished</span>
+<span class="hljs-comment"># in main: get page 3s success</span>
+<span class="hljs-comment"># in main: get page 2s success</span>
+<span class="hljs-comment"># get page 4s finished</span>
+<span class="hljs-comment"># in main: get page 4s success</span>
+</code></pre>
+<p>add_done_callback&#xFF08;func&#xFF09;&#xFF1A;&#x63A8;&#x8350;</p>
+<p><code>add_done_callback</code>&#x51FD;&#x6570;&#x662F;future&#x5BF9;&#x8C61;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;future&#x5BF9;&#x8C61;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#x540E;&#x4F1A;&#x56DE;&#x8C03;<code>func</code>&#x51FD;&#x6570;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x662F;&#x5F02;&#x6B65;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x4E0E;<code>result</code>&#x4E0D;&#x540C;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x963B;&#x585E;&#x4E3B;&#x7EBF;&#x7A0B;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> concurrent.futures <span class="hljs-keyword">import</span> ThreadPoolExecutor
+<span class="hljs-keyword">import</span> time
+
+<span class="hljs-comment"># &#x53C2;&#x6570;times&#x7528;&#x6765;&#x6A21;&#x62DF;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x95F4;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_html</span><span class="hljs-params">(times)</span>:</span>
+    time.sleep(times)
+    print(<span class="hljs-string">&quot;get page {}s finished&quot;</span>.format(times))
+    <span class="hljs-keyword">return</span> times
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_res</span><span class="hljs-params">(future)</span>:</span>
+    print(future.result())
+
+urls = [<span class="hljs-number">3</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>] <span class="hljs-comment"># &#x5E76;&#x4E0D;&#x662F;&#x771F;&#x7684;url</span>
+
+<span class="hljs-keyword">with</span> ThreadPoolExecutor(max_workers=<span class="hljs-number">2</span>) <span class="hljs-keyword">as</span> pool:
+    <span class="hljs-keyword">for</span> url <span class="hljs-keyword">in</span> urls:
+        future = pool.submit(get_html,url)
+        future.add_done_callback(print_res)
+<span class="hljs-comment"># get page 2s finished</span>
+<span class="hljs-comment"># 2</span>
+<span class="hljs-comment"># get page 3s finished</span>
+<span class="hljs-comment"># 3</span>
+<span class="hljs-comment"># get page 4s finished</span>
+<span class="hljs-comment"># 4</span>
+</code></pre>
+</blockquote>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../introduction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2.1多任务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.1.1线程","level":"1.2.2.1.1","depth":4,"next":{"title":"2.1.2进程","level":"1.2.2.1.2","depth":4,"ref":"","articles":[]},"previous":{"title":"2.1多任务","level":"1.2.2.1","depth":3,"path":"Python/高级语法/多任务/introduction.md","ref":"Python/高级语法/多任务/introduction.md","articles":[{"title":"2.1.1线程","level":"1.2.2.1.1","depth":4,"path":"Python/高级语法/多任务/线程/thread.md","ref":"Python/高级语法/多任务/线程/thread.md","articles":[]},{"title":"2.1.2进程","level":"1.2.2.1.2","depth":4,"ref":"","articles":[]},{"title":"2.1.3协程","level":"1.2.2.1.3","depth":4,"ref":"","articles":[]}]},"dir":"ltr"},"config":{"plugins":["ancre-navigation","expandable-chapters","code","pageview-count","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"pageview-count":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Msj","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Msj's gitbook","language":"zh-hans","gitbook":"3.2.3","description":"select * from learn"},"file":{"path":"Python/高级语法/多任务/线程/thread.md","mtime":"2020-01-10T03:35:00.005Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-10T03:40:42.351Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

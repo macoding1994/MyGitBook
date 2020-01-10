@@ -1,0 +1,18 @@
+{
+    "title": "Msj's gitbook",
+    "author": "Msj",
+    "description": "select * from learn",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+
+
+
+    "plugins" : [
+        "ancre-navigation",
+        "expandable-chapters",
+        "code",
+        "pageview-count"
+    ]
+
+}
+

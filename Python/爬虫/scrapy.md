@@ -9,7 +9,7 @@
 
 ## scrapy的流程
 
-![](D:\python\Python-for-GitBook\Python\爬虫\images\scrapy工作流程.png)
+![](images\scrapy工作流程.png)
 
 > 各个功能模块之间的通讯，必须通过引擎：
 >

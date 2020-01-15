@@ -5,6 +5,10 @@
 > 相关概念：
 >
 > - 线程锁 ： 互斥锁对共享数据进行锁定，保证同一时刻只能有一个线程去操作
+>
+> 特点：
+>
+> * 多线程之间共享全局变量
 
 ## 原生threading.Thread
 
@@ -36,7 +40,37 @@ thread = threading.Thread(target=func,args,kwargs)
 thread.start()
 ```
 
+### 守护线程
+
+```python
+import threading
+import time
+
+
+# 测试主线程是否会等待子线程执行完成以后程序再退出
+def show_info():
+    for i in range(5):
+        print("test:", i)
+        time.sleep(0.5)
+
+
+if __name__ == '__main__':
+    # 创建子线程守护主线程 
+    # daemon=True 守护主线程
+    # 守护主线程方式1
+    sub_thread = threading.Thread(target=show_info, daemon=True)
+    # 设置成为守护主线程，主线程退出后子线程直接销毁不再执行子线程的代码
+    # 守护主线程方式2
+    # sub_thread.setDaemon(True)
+    sub_thread.start()
+
+    # 主线程延时1秒
+    time.sleep(1)
+    print("over")
+```
+
 ### 互斥锁
+
 > 使用：
 > - 如果这个锁之前是没有上锁的，那么`acquire`不会堵塞
 > - 如果在调用`acquire`对这个锁上锁之前 它已经被 其他线程上了锁，那么此时`acquire`会堵塞，直到这个锁被解锁为止

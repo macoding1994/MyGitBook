@@ -10,7 +10,10 @@
             * 2.1.3协程
             * 2.1.4比较
     * 3.GUI
+        * PyQt
     * 4.WEB
+        * [4.1Django](Python/WEB/Django/Django.md)
+          * [4.1.1Django入门](Python/WEB/Django/Django入门.md)
     * [5.Spiders](Python/爬虫/introduction.md)
         * [5.1requests](Python/爬虫/request.md)
         * 5.2selenium

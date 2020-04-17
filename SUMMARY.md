@@ -13,7 +13,11 @@
         * PyQt
     * 4.WEB
         * [4.1Django](Python/WEB/Django/Django.md)
-          * [4.1.1Django入门](Python/WEB/Django/Django入门.md)
+          * [4.1.1Django-section1](Python/WEB/Django/Django-section1.md)
+          * [4.1.2Django-section2](Python/WEB/Django/Django-section2.md)
+          * [4.1.3Django-section3](Python/WEB/Django/Django-section3.md)
+          * [4.1.4Django-section4](Python/WEB/Django/Django-section4.md)
+          * [4.1.5Django-section5](Python/WEB/Django/Django-section.md)
     * [5.Spiders](Python/爬虫/introduction.md)
         * [5.1requests](Python/爬虫/request.md)
         * 5.2selenium

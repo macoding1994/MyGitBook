@@ -25,3 +25,21 @@
     * 6.AI
     * 7.DEMO
 
+------
+
+TODOLIST：
+
+* 5月份：
+  * 5.1-5.5
+    * MACODINGBLOGS 完善与部署
+    * Django企业开发实战（markdown）-- 3D
+  * 5.6-5.24
+    * MACIDUBFBLOGS 完善
+    * Django-DRF -- 8D
+* 6月份：
+* 7月份：
+* 8月份：
+* 9月份：
+* 10月份：
+* 11月份：
+* 12月份：

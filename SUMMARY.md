@@ -18,6 +18,8 @@
           * [4.1.3Django-section3](Python/WEB/Django/Django-section3.md)
           * [4.1.4Django-section4](Python/WEB/Django/Django-section4.md)
           * [4.1.5Django-section5](Python/WEB/Django/Django-section.md)
+        * 4.2 Flask
+          * 4.2.1 Flask-celery
     * [5.Spiders](Python/爬虫/introduction.md)
         * [5.1requests](Python/爬虫/request.md)
         * 5.2selenium

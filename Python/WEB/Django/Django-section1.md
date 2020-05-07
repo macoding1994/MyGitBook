@@ -6,15 +6,15 @@
 
 ## ORM
 
-什么是ORM
+### 什么是ORM
 
 ORM (Object-Relationl Mapping)是关系型数据库与和对象之间的映射
 
-为什么有ORM
+### 为什么有ORM
 
 主要是将业务逻辑和数据逻辑分离，将MVT中MV层解耦合；在一定程度上可以防止SQL注入避免写一些复制的SQL语句，但性能会有所下降
 
-怎么用
+### 怎么用
 
 * 数值型：
 
@@ -65,5 +65,46 @@ ORM (Object-Relationl Mapping)是关系型数据库与和对象之间的映射
 
 ## QuerySet
 
+### 什么是QuerySet
 
+在Django中，Model有一个objects的属性来提供数据操作的接口，返回的对象就要QuerySet，也叫查询集。QuerySet具有**惰性执行**和**缓存**特性,在使用数据时，才会去DB中查询
+
+```	python
+qs = BookInfo.objects.all()  # 返回QuerySet对象
+for book in qs:
+    print(book.btitle)  # 执行查询语句
+```
+
+### 怎么用
+
+* 链式调用接口
+  * all
+  * filter
+  * exclude
+  * reverse
+  * distinct
+  * none
+* 非链式调用接口
+  * get
+  * create
+  * get_or_create
+  * update_or_create
+  * count
+  * latest
+  * earliest
+  * first
+  * last
+  * exists
+  * bulk_create
+  * in_bulk
+  * update
+  * delete
+  * values
+* 进阶接口（性能优化）
+  * defer
+  * only
+  * select_related
+  * prefetch_related
+* 常用字段查询
+* 进阶查询
 

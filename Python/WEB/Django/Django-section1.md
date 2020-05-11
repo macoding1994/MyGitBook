@@ -219,7 +219,13 @@ insert into tb_heros(hname,hgender,hbook_id,hcomment,is_delete) values
 
 
 
+#### only
 
+指定加载固定字段，返回queryset对象。如果使用了其他字段，会产生额外的查询，only方法时一定要非常注意它的顺序，它的执行以最后一个为准
+
+#### defer
+
+用法与**only**一样
 
 #### select_related
 
@@ -257,4 +263,6 @@ for hero in heros:
 
 
 #### **prefetch_related**
+
+#### 
 

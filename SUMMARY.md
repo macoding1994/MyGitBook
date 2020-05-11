@@ -38,8 +38,14 @@ TODOLIST：
     * MACODINGBLOGS 完善与部署
     * Django企业开发实战（markdown）-- 3D
   * 5.6-5.24
+    
     * MACIDUBFBLOGS 完善
+    
     * Django-DRF -- 8D
+    
+      > 解耦硬编码 ： 在逻辑运算中存在无意义的数字，通过定义更加语义化的变量来取代毫无意义的数字
+      >
+      > 开闭原则：修改代码时无需全局更改
 * 6月份：
 * 7月份：
 * 8月份：

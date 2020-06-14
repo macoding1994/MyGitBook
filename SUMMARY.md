@@ -11,7 +11,7 @@
             * 2.1.4比较
     * 3.GUI
         * PyQt
-        * Kivy
+        * [Kivy](Python/GUI/Kivy/Kivy.md)
     * 4.WEB
         * [4.1Django](Python/WEB/Django/Django.md)
           * [4.1.1Django-section1](Python/WEB/Django/Django-section1.md)
